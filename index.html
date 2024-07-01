@@ -1,193 +1,27 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <title>FRUIT PARADISE  </title>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width" />
-    <link rel="stylesheet" href="styles.css" />
-    <link rel="icon" href="/images/logo.png" type="image/x-icon">
+<html>
+<head>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <tit1e>To-Do List App - Easy Tutorials</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="continer">
+     <div class="todo-app">
+        <h2>To-Do List <img src="images/icon.png"></h2>
+        <div class="row">
+            <input type="text" id="input-box" placeholder="Add your text">
+            <button onclick="addTask()" >Add</button>
+        </div>
+        <ul id="list-container">
+           <!-- <li class="checked">Task 1</li>
+            <li>Task 2</li>
+            <li>Task 3</li> -->
+        </ul>
+    </div>
+   
+    </div>
+    <script src="script.js"></script>
 
-  </head>
-  <body>
-    <header id="header">
-      <div class="header-content-div">
-        <a href="#home-sec">
-          <img
-            src="/images/logo.png"
-            alt="Company Logo"
-            id="header-img"
-        /></a>
-        <nav id="nav-bar">
-          <a href="#about" class="nav-link">ABOUT</a>
-          <a href="#varieties" class="nav-link">VARIETIES</a>
-          <a href="#our-service" class="nav-link">OUR SERVICE</a>
-          <a href="#benefits" class="nav-link">BENEFITS</a>
-        </nav>
-      </div>
-    </header>
-    <main>
-      <section id="home-sec" class="flexible home-sec">
-        <div class="eye-grabber-img">
-          <img src="/images/home.png" alt="Image of Apples" class="homefr"/>
-        </div>
-        <div class="eye-grabber">
-          <h1>Fresh, Crispy, Heavenly.</h1>
-          <h2>
-             Vivid varieties of fruits grown under 100% in Organic Method.
-            Taste the precious gift of nature without any harmness...! 
-          </h2>
-          <button class="btn" onclick="window.location.href = '#contact';">
-            Buy Now
-          </button>
-        </div>
-      </section>
-      <section id="about" class="sec-padding">
-        <h3 class="section-heading">ABOUT US</h3>
-        <div class="sec-content-div flexible">
-          <p style="text-align: center;">
-                                                 Welcome to Fruit Paradise, a labor of love that has ripened into a celebration of nature's finest treasures. 
-            Founded by a family with an unwavering passion for fresh, delectable fruits, we've grown from a humble beginning into 
-            a leading name in the world of fruit commerce. Our story is one of dedication, a commitment to excellence,
-             and a belief in the power of nature to nurture both body and soul. At Fruit Paradise, we take pride in every apple, 
-             peach, and mango we deliver, carefully selected and handpicked from trusted growers. We're not just about fruits;
-              we're about the experience of indulging in the purest, most vibrant flavors, making healthy living more accessible 
-              and delightful. Our commitment to freshness is uncompromising, and our selection spans a diverse range of fruits,
-               showcasing the essence of each season. Sustainability is at the core of our values, as we champion eco-friendly 
-               practices in agriculture. As you explore our website, we invite you to join us in celebrating the goodness of nature's harvest, 
-               whether for a wholesome snack, a thoughtful gift, or the ingredients for your culinary creations. Thank you for being a part
-                of our journey, and we look forward to nourishing your life with the joy of fresh, flavorful fruits.
-
-
-          </p>
-          <img src="/images/MAIN .png" alt="SAMPLE PHOTO OF OUR SHOP" />
-        </div>
-      </section>
-      <section id="varieties" class="sec-padding">
-        <h3 class="section-heading">VARIETIES</h3>
-        <div class="sec-content-div flexible">
-          <div class="tile">
-            <img src="/images/watermelon.png" alt="photo of amber apples" />
-            <h4>Water Melon</h4>
-            <p>
-              Juicy, refreshing, and perfect for hot days,
-               watermelon is a hydrating summer treat loved for its sweet, crisp flesh.
-            </p>
-          </div>
-          <div class="tile">
-            <img
-              src="/images/avacado.png"
-              alt="photo of american trel apples"
-            />
-            <h4>Avacado</h4>
-            <p>
-              Creamy and versatile, avocados are a nutrient-rich superfood, 
-              adding a rich, buttery texture to dishes.
-            </p>
-          </div>
-          <div class="tile">
-            <img src="/images/grapes.png" alt="photo of red delicious apple" />
-            <h4>Grapes</h4>
-            <p>
-              Grapes are nature's candy, small, juicy, and available in various 
-              colors, offering a balance of sweetness and tartness.
-            </p>
-          </div>
-          <div class="tile">
-            <img src="/images/mango.png" alt="photo of Maharaej apples" />
-            <h4>Mango</h4>
-            <p>
-              Mangoes, known as the "king of fruits," are a tropical delight 
-              with their sweet, fragrant flesh and sunny flavor.
-            </p>
-          </div>
-          <div class="tile">
-            <img src="/images/orange.png" alt="photo of Hazratbael apples" />
-            <h4>Orange</h4>
-            <p>
-              Oranges are a citrus delight, bursting with vitamin C,
-               zesty flavor, and a vibrant orange hue.
-            </p>
-          </div>
-          <div class="tile">
-            <img src="/images/straberry.png" alt="photo of Golden Delicious apples" />
-            <h4>Strawberries</h4>
-            <p>
-              Strawberries are petite, heart-shaped jewels bursting with
-               sweetness, making them a classic favorite in desserts and salads.
-            </p>
-          </div>
-        </div>
-      </section>
-      <section id="our-service" class="sec-padding">
-        <h3 class="section-heading">WHY CHOOSING FRUIT PARADISE</h3>
-        <div class="sec-content-div">
-          <div class="bars">
-            <div class="icon-container">
-              <img src="https://i.ibb.co/w6H542X/Fresh.png" alt="" />
-            </div>
-            <div class="txt-container">
-              <h5>Fresh</h5>
-              <p>We deliver fresh fruits with a 100% guarantee of freshness.</p>
-            </div>
-          </div>
-          <div class="bars">
-            <div class="icon-container">
-              <img src="https://i.ibb.co/FKNq4Qr/delivered.png" alt="" />
-            </div>
-            <div class="txt-container">
-              <h5>QUICK</h5>
-              <p>
-                We deliver your orders as fast as possible, delivery procedure
-                begins as soon as fruits is plucked from tree.
-              </p>
-            </div>
-          </div>
-          <div class="bars">
-            <div class="icon-container">
-              <img src="https://i.ibb.co/HHQK1wV/happy.png" alt="" />
-            </div>
-            <div class="txt-container">
-              <h5>Fulfillment</h5>
-              <p>
-                We guarantee 100% customer satisfaction. We do our best to make
-                your purchase experience smooth. But if we mess up somehow you
-                will get compensated for every inconvenience.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section id="benefits" class="sec-padding">
-        <h3 class="section-heading">BENEFITS</h3>
-        <div class="sec-content-div flexible">
-        
-          <iframe width="600" height="600" src="https://www.youtube.com/embed/E-TBgVB4J8E" frameborder="0" allowfullscreen></iframe>
-                </div>
-      </section>
-      <section class="sec-padding" id="contact">
-        <h3 class="section-heading">CONTACT</h3>
-        <div class="sec-content-div flexible">
-          <h6>To make an order or just to know more contact us :</h6>
-          <form
-            id="form"
-            action="https://www.freecodecamp.com/email-submit"
-            method="POST"
-          >
-            <input
-              type="email"
-              name="email"
-              id="email"
-              placeholder="Your Email Address"
-              required
-            />
-            <input type="submit" class="btn" id="submit" value="Know More" />
-          </form>
-        </div>
-      </section>
-    </main>
-    <footer>
-      Created by
-      <a href="#">ANANDHA NIVAS S </a>
-    </footer>
-  </body>
+</body>
 </html>
